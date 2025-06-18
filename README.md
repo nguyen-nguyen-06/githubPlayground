@@ -12,7 +12,14 @@ Follows: Create one, git init ( to create a .git file that keep track the change
 
 
 ## Branching
-create a new branch (git checkout -b <branch name>), switch branch (git checkout <branch name>), make some changes then save (git add ., git commit -m ""), (this changes will not appear on the main branch until we merge them).
+create a new branch (git checkout -b <branch name>), switch branch (git checkout <branch name>), (must in the new branch before) make some changes then save (git add ., git commit -m ""), (this changes will not appear on the other branch until we merge them).
+Here we will have 2 choices.
+1) if we believe our code is right or working independently(No need for review): (we should be in the branch that we want to be merged to) simply merge the new branch to the branch we want: 
+git merge <branch name>
+2) If working with a team: since I only create changes in local machine, I should create a new branch in github for those change by: git push -u origin <branch name> 
+Then create a pull request ( a request to merge the branch to the branch we want)
+
+Then, after merging successfully, it will delete the new branch and we return to the branch we want
 
 ## Some useful things on terminal
 1) When using bash in terminal, to check the bash profile(there are some code that I pasted to customize) use 
@@ -24,14 +31,15 @@ notepad $PROFILE
  - cd <name> (both) is to change the directory 
  - ls (both) is to see the child of the current directory
  - git status (both) is to see the status (keeptrack, commit) of the directory
- - git branch: to see the list of branch and the current branch (this actually shown on the prompt, can modify this by accessing the profile)
  - git config user.name/ git config user.email : to see the name/email of the author of this commit 
  - git checkout -b <name>: to create a new branch
  - git checkout <name>: to change to a designated branch
  - clear: to clear the terminal screen
  - git commit -m "" -m "" : the first is header, the 2nd is message
- - git merge <branch name>: to merge a specified branch with the main 
- - git diff <branch name>: show the total difference between the branch and the main
+ - git branch: to see the list of branch and the current branch we are in(this actually shown on the last word of the prompt, can modify this by accessing the profile)
+ For the next 2 we should be in the branch we want to be merged to do that.
+ - git merge <branch name>: to merge a specified branch with the branch we are in 
+ - git diff <branch name>: show the total difference between the branch and the branch we are in
 
 
 
