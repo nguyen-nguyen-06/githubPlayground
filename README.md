@@ -6,9 +6,9 @@ This is the first subheader
 ## Some useful things when using git
 
 1) Have a repository: 
-Follows: create a folder to work with, git clone, git add . (this is to tell git to keep track changes in all the directory), git commit (suggest change, usually need authors of the change git config user.name ot user.email), If I am the owner of the repository: git push (make change in the branch). 
+Follows: create a folder to work with, git clone, git add . (this is to tell git to keep track changes in all the directory), git commit -m "some message" (suggest change, usually need authors of the change git config user.name ot user.email), If I am the owner of the repository: git push (make change in the branch). 
 2) Does not have a repository but have a folder
-Follows: Create one, git init ( to create a .git file that keep track the change of the files), git add ., git commit, git remote add origin <URL of the repository> (because commit is the update the change in local machine not on github. Since we have not connect the folder with any of the repository we have to add this line), git remote -v(to check), git push.
+Follows: Create one, git init ( to create a .git file that keep track the change of the files), git add ., git commit -m "", git remote add origin <URL of the repository> (because commit is the update the change in local machine not on github. Since we have not connect the folder with any of the repository we have to add this line), git remote -v(to check the connection), git push
 
 
 ## Some useful things on terminal
@@ -26,5 +26,6 @@ notepad $PROFILE
  - git checkout -b <name>: to create a new branch
  - git checkout <name>: to change to a designated branch
  - clear: to clear the terminal screen
+ - git commit -m "" -m "" : the first is header, the 2nd is message
 
 
