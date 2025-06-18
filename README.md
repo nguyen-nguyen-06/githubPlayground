@@ -11,6 +11,9 @@ Follows: create a folder to work with, git clone, git add . (this is to tell git
 Follows: Create one, git init ( to create a .git file that keep track the change of the files), git add ., git commit -m "", git remote add origin <URL of the repository> (because commit is the update the change in local machine not on github. Since we have not connect the folder with any of the repository we have to add this line), git remote -v(to check the connection), git push
 
 
+## Branching
+create a new branch (git checkout -b <branch name>), switch branch (git checkout <branch name>), make some changes then save (git add ., git commit -m ""), (this changes will not appear on the main branch until we merge them).
+
 ## Some useful things on terminal
 1) When using bash in terminal, to check the bash profile(there are some code that I pasted to customize) use 
 nano ~/.bashrc
@@ -27,5 +30,8 @@ notepad $PROFILE
  - git checkout <name>: to change to a designated branch
  - clear: to clear the terminal screen
  - git commit -m "" -m "" : the first is header, the 2nd is message
+ - git merge <branch name>: to merge a specified branch with the main 
+ - git diff <branch name>: show the total difference between the branch and the main
+
 
 
