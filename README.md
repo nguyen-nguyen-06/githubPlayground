@@ -16,10 +16,12 @@ create a new branch (git checkout -b \<branch name\>), (must in the new branch b
 Here we will have 2 choices.
 1) if we believe our code is right or working independently(No need for review): (we should be in the branch that we want to be merged to) simply merge the new branch to the branch we want: 
 git merge \<branch name\>
+- Note: after we merge, this only change in local machine, we need to push to github 
 2) If working with a team: after we commit, I need to push to github. Since I only create changes in local machine, I should create a new branch in github for those change by: 
 git push -u origin \<branch name\> 
 Then create a pull request ( a request to merge the branch to the branch we want)
 If I am the owner, use: git pull (this will merge)
+
 
 Then, after merging successfully, delete branch by git branch -d \<branch name\>
 
