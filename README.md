@@ -18,8 +18,9 @@ Here we will have 2 choices.
 git merge <branch name>
 2) If working with a team: since I only create changes in local machine, I should create a new branch in github for those change by: git push -u origin <branch name> 
 Then create a pull request ( a request to merge the branch to the branch we want)
+If I am the owner, use: git pull (this will merge)
 
-Then, after merging successfully, it will delete the new branch and we return to the branch we want
+Then, after merging successfully, delete branch by git branch -d <branch name>
 
 ## Some useful things on terminal
 1) When using bash in terminal, to check the bash profile(there are some code that I pasted to customize) use 
