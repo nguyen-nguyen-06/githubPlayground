@@ -12,7 +12,7 @@ Follows: Create one, git init ( to create a .git file that keep track the change
 
 
 ## Branching
-create a new branch (git checkout -b \<branch name\>), switch branch (git checkout \<branch name\>), (must in the new branch before) make some changes then save (git add ., git commit -m ""), (this changes will not appear on the other branch until we merge them).
+create a new branch (git checkout -b \<branch name\>), switch branch , (must in the new branch before) make some changes then save (git add ., git commit -m ""), (this changes will not appear on the other branch until we merge them).
 Here we will have 2 choices.
 1) if we believe our code is right or working independently(No need for review): (we should be in the branch that we want to be merged to) simply merge the new branch to the branch we want: 
 git merge \<branch name\>
