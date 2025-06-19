@@ -20,7 +20,8 @@ git merge \<branch name\>
 2) If working with a team: after we commit, I need to push to github. Since I only create changes in local machine, I should create a new branch in github for those change by: 
 git push -u origin \<branch name\> 
 Then create a pull request ( a request to merge the branch to the branch we want)
-If I am the owner, use: git pull (this will merge)
+If I am the owner, I need to do merging on github
+However, it does not change on local branch, we have to use: git checkout to our desired branch (the one we just merged to) and use git pull to update the merging we do on github.
 
 
 Then, after merging successfully, delete branch by git branch -d \<branch name\>
