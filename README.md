@@ -29,8 +29,8 @@ Then, after merging successfully, delete branch by git branch -d \<branch name\>
 ## Undoing in git 
 
 1) If we typed git add but not push yet, use git reset /<File name/> (useless)
-2) If we already committed, use git reset HEAD/~1 to return to the previous commit, 
-or git reset Head/~/<n/> to return to the latest n-th commit before the one we just made (git is like a linked list, Head will point to the last commit)
+2) If we already committed, use git reset HEAD/\~1 to return to the previous commit, 
+or git reset Head/\~/<n/> to return to the latest n-th commit before the one we just made (git is like a linked list, Head will point to the last commit)
 3) git reset /<commit id/> return to the place after that commit
 
 - Note: this only change in our local branch
