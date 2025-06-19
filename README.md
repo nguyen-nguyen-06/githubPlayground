@@ -31,6 +31,7 @@ Then, after merging successfully, delete branch by git branch -d \<branch name\>
 1) If we typed git add but not push yet, use git reset /<File name/> (useless)
 2) If we already committed, use git reset HEAD/~1 to return to the previous commit, 
 or git reset Head/~/<n/> to return to the latest n-th commit before the one we just made (git is like a linked list, Head will point to the last commit)
+3) git reset /<commit id/> return to the place after that commit
 
 - Note: this only change in our local branch
 
@@ -53,6 +54,8 @@ notepad $PROFILE
  For the next 2 we should be in the branch we want to be merged to do that.
  - git merge \<branch name\>: to merge a specified branch with the branch we are in 
  - git diff \<branch name\>: show the total difference between the branch and the branch we are in
+ - git diff: to see the diff between the last commit and the 2nd last commit
+ - git log: to see commit history
 
 
 
