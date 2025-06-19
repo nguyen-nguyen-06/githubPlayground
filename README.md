@@ -26,6 +26,14 @@ However, it does not change on local branch, we have to use: git checkout to our
 
 Then, after merging successfully, delete branch by git branch -d \<branch name\>
 
+## Undoing in git 
+
+1) If we typed git add but not push yet, use git reset /<File name/> (useless)
+2) If we already committed, use git reset HEAD/~1 to return to the previous commit, 
+or git reset Head/~/<n/> to return to the latest n-th commit before the one we just made (git is like a linked list, Head will point to the last commit)
+
+- Note: this only change in our local branch
+
 ## Some useful things on terminal
 1) When using bash in terminal, to check the bash profile(there are some code that I pasted to customize) use 
 nano ~/.bashrc
@@ -45,6 +53,10 @@ notepad $PROFILE
  For the next 2 we should be in the branch we want to be merged to do that.
  - git merge \<branch name\>: to merge a specified branch with the branch we are in 
  - git diff \<branch name\>: show the total difference between the branch and the branch we are in
+
+
+
+
 
  
 
